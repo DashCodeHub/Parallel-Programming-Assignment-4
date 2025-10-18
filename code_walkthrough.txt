@@ -1,0 +1,8 @@
+Overview 
+--------
+
+Implemented a Parallel Quicksort Algorithm on shared memory using PThreads and a fixed thread pool. 
+Large subproblems are partitioned and turned into tasks that go into a concurrent queue; workers pop tasks and keep sorting until the queue drains.
+Small subproblems fallback  to a fast sequential quicksort that switches to insertion sort near the leaves (better cache behaviour)
+
+
